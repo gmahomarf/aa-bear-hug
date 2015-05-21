@@ -7,12 +7,10 @@
 <body>
 	<script type="text/javascript" charset="utf-8">
 		var redirectUrl = '{{redirectUrl}}';
-		window.top.location.assign(redirectUrl);
+		//window.top.location.assign(redirectUrl);
 	</script>
-	<noscript>
-		<h3>You have successfully logged in to the app and given your permission.</h3>
-		<h3>Unfortunately, it seems your browser has Javascript disable, so we can't redirect you automatically.</h3>
-		<a target="_top" href="{{redirectUrl}}">Click here to go to your destination</a>
-	</noscript>
+	<h3>You have successfully logged in to the app and given your permission.</h3>
+	<h3>Unfortunately, it seems your browser has Javascript disable, so we can't redirect you automatically.</h3>
+	<a target="_top" href="{{redirectUrl}}">Click here to go to your destination</a>
 </body>
 </html>
