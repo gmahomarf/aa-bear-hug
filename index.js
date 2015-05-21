@@ -25,8 +25,22 @@ server.route([
 		method: '*',
 		path: '/',
 		handler: facebookHandler.checkLoginStatus
-		}
-	]);
+	}
+]);
+
+server.ext('onPreResponse', function(request, reply) {
+
+	var response = request.response;
+	if (!response.isBoom) {
+		return reply.continue();
+	}
+
+	var error = response;
+	console.dir(error);
+	error.output.payload.innerException = error.toString();
+
+	return reply(error);
+});
 
 server.start(function(err) {
 	if (err) {
