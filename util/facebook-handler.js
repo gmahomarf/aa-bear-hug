@@ -31,11 +31,8 @@ FacebookHandler.checkLoginStatus = function(request, reply) {
 
 		if (signature !== expectedSignature) {
 			//TODO: What happens if signature is incorrect?
-			console.log('Signature:', signature);
-			console.log('Expected Signature:', expectedSignature);
 			return reply.view('permission-denied', permissionDeniedContext);
 		} else if (!data.oauth_token) {
-			console.dir(data);
 			return reply.view('permission-denied', permissionDeniedContext);
 		} else {
 			var fbUserId = data.user_id;
