@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Permission Denied</title>
+</head>
+<body>
+	<script type="text/javascript" charset="utf-8">
+		var fbLoginUrl = 'https://www.facebook.com/dialog/oauth?client_id={{fbAppId}}&redirect_uri={{fbAppUrl}}';
+		window.top.location.assign(fbLoginUrl);
+	</script>
+	<noscript>
+		<h1>If you wish to use this app, you need to give me permission.</h1>
+		<h1>If you've already given permission, you may have reached this page outside Facebook.</h1>
+		<a target="_top" href="https://www.facebook.com/dialog/oauth?client_id={{fbAppId}}&amp;redirect_uri={{fbAppUrl}}">Click here to try again</a>
+	</noscript>
+</body>
+</html>
