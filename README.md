@@ -2,7 +2,7 @@
 
 ##Introduction
 
-This is the first draft of a simple Facebook canvas app that will verify if a user has given their permission for it to access their data. If permission hasn't been given, it will redirect a user to a permition request dialog, and then back to the app. The app will then check if a user has been ivited and then redirect the user to a private page.
+This is the first draft of a simple Facebook canvas app that will verify if a user has given their permission for it to access their data. If permission hasn't been given, it will redirect a user to a permission request dialog, and then back to the app. The app will then check if a user has been invited and then redirect the user to a private page.
 
 
 ##Configuration
